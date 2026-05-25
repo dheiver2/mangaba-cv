@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mangaba AI — Visão Computacional aplicada. Reduza retrabalho, ruptura e tempo de laudo com IA visual em produção. Cases reais em indústria, varejo, saúde e agro." />
+  <meta name="theme-color" content="#FAF9F5" />
+  <meta property="og:title" content="Mangaba AI · Visão Computacional para sua operação" />
+  <meta property="og:description" content="Detecção, OCR e analytics de vídeo em produção. Veja cases reais com ROI mensurável." />
+  <meta property="og:type" content="website" />
+  <title>Mangaba AI · Visão Computacional para sua operação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+
+<!-- ============== NAV ============== -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="Mangaba AI">
+      <span class="brand__mark" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="14" fill="#D97757"/>
+          <path d="M10 19 L16 9 L22 19 Z" fill="#FAF9F5"/>
+          <circle cx="16" cy="20" r="2" fill="#FAF9F5"/>
+        </svg>
+      </span>
+      <span class="brand__name">Mangaba<span class="brand__dot">.</span>AI</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#cases">Cases</a>
+      <a href="#aplicacoes">Aplicações</a>
+      <a href="#video">Vídeo</a>
+      <a href="#pacotes">Pacotes</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/5500000000000?text=Quero%20conhecer%20o%20Mangaba%20CV"
+         class="nav__cta" target="_blank" rel="noopener">Agendar demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <span class="eyebrow">Visão Computacional aplicada · pronta para produção</span>
+    <h1 class="hero__title">
+      Tire valor das suas câmeras.<br/>
+      <em>Em semanas, não em anos.</em>
+    </h1>
+    <p class="hero__lede">
+      Mangaba CV transforma imagens e vídeos em decisões automáticas: detecção de defeitos,
+      ruptura de gôndola, EPI, OCR de documentos, leitura de placas e muito mais —
+      integrado ao seu ERP, MES ou dashboard em até 6 semanas.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#contato">Agendar demonstração</a>
+      <a class="btn btn--ghost" href="https://wa.me/5500000000000?text=Quero%20saber%20mais%20sobre%20Mangaba%20CV"
+         target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+
+    <p class="hero__proof">
+      <span>✓</span> Mais de 40 deploys em produção
+      <span>·</span> ROI médio em <b>5 meses</b>
+      <span>·</span> Compatível com sua câmera atual
+    </p>
+
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=1600&q=80"
+           alt="Linha de produção industrial com detecção visual ao vivo" />
+      <div class="hero__overlay">
+        <div class="bbox bbox--ok" data-label="peça OK · 0.97" style="--x:10%;--y:28%;--w:24%;--h:48%;"></div>
+        <div class="bbox bbox--warn" data-label="defeito · 0.86" style="--x:40%;--y:34%;--w:22%;--h:38%;"></div>
+        <div class="bbox" data-label="peça · 0.93" style="--x:68%;--y:30%;--w:22%;--h:46%;"></div>
+      </div>
+      <div class="hero__hud">
+        <span class="dot"></span> LIVE · cam-04 · 32&nbsp;ms · 0 alertas
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TRUST STRIP ============== -->
+<section class="trust">
+  <div class="container">
+    <p class="trust__title">Empresas que automatizaram visão com Mangaba</p>
+    <div class="trust__row" aria-hidden="true">
+      <span>INDÚSTRIA AUTOMOTIVA</span>
+      <span>REDE HOSPITALAR</span>
+      <span>VAREJO ALIMENTAR</span>
+      <span>COOPERATIVA AGRO</span>
+      <span>OPERADORA LOGÍSTICA</span>
+      <span>MINERAÇÃO</span>
+      <span>ENERGIA &amp; UTILITIES</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============== IMPACT STATS ============== -->
+<section class="section section--alt" id="impacto">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <span class="eyebrow">Resultados que pagam o projeto</span>
+      <h2>Cada métrica abaixo é o resultado real medido em operações Mangaba.</h2>
+    </div>
+    <div class="impact-grid">
+      <div class="impact">
+        <b>−41%</b>
+        <span>refugo em linha de pintura automotiva (90 dias)</span>
+      </div>
+      <div class="impact">
+        <b>R$ 2,3M</b>
+        <span>economia anual em rede de 480 lojas de varejo</span>
+      </div>
+      <div class="impact">
+        <b>−63%</b>
+        <span>tempo até laudo crítico em radiologia</span>
+      </div>
+      <div class="impact">
+        <b>120k ha</b>
+        <span>monitorados em tempo real para cooperativa agro</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CASES (REAIS, RICOS, COMERCIAIS) ============== -->
+<section class="section" id="cases">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Cases reais</span>
+      <h2>Histórias de quem virou a chave com Mangaba CV.</h2>
+      <p>Cada case tem imagem da operação, o problema concreto, o que entregamos e o impacto medido.</p>
+    </div>
+
+    <!-- ===== CASE 1: AUTOMOTIVO ===== -->
+    <article class="rcase">
+      <div class="rcase__media">
+        <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=1600&q=80"
+             alt="Linha de pintura automotiva com inspeção visual"/>
+        <div class="bbox-overlay">
+          <div class="bbox bbox--ok" data-label="painel OK · 0.97" style="--x:18%;--y:30%;--w:30%;--h:46%;"></div>
+          <div class="bbox bbox--warn" data-label="risco · 0.84" style="--x:54%;--y:38%;--w:18%;--h:22%;"></div>
+        </div>
+        <span class="rcase__pill">Automotivo · 6 estações · Brasil-SP</span>
+      </div>
+      <div class="rcase__body">
+        <h3>Montadora reduz refugo em 41% e ganha rastreabilidade por chassi</h3>
+        <p class="rcase__problem">
+          <b>Problema.</b> Inspeção 100% manual em 6 estações da linha de pintura — repintura
+          custava R$ 1.200 por unidade e indicadores chegavam ao gestor 24h depois.
+        </p>
+        <p class="rcase__solution">
+          <b>O que entregamos.</b> Câmeras industriais 4K + modelos de anomalia treinados em
+          800 imagens de defeitos reais. Detecção em 80&nbsp;ms, integração ao MES via OPC UA,
+          rastreabilidade automática por número de chassi.
+        </p>
+        <div class="rcase__stats">
+          <div><b>−41%</b><span>refugo em 90 dias</span></div>
+          <div><b>80&nbsp;ms</b><span>inferência por peça</span></div>
+          <div><b>6 sem.</b><span>do piloto ao go-live</span></div>
+          <div><b>R$ 4,1M</b><span>economia anualizada</span></div>
+        </div>
+        <blockquote class="rcase__quote">
+          “Em 90 dias paramos de discutir a inspeção visual em reunião de qualidade.
+          O time agora age sobre o defeito raiz, não corre atrás dele.”
+          <cite>— Gerente de Qualidade, montadora regional</cite>
+        </blockquote>
+      </div>
+    </article>
+
+    <!-- ===== CASE 2: SAÚDE ===== -->
+    <article class="rcase rcase--reverse">
+      <div class="rcase__media">
+        <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=1600&q=80"
+             alt="Radiologista analisando tomografia com apoio de IA"/>
+        <div class="bbox-overlay">
+          <div class="bbox bbox--warn" data-label="achado prioritário" style="--x:38%;--y:28%;--w:22%;--h:30%;"></div>
+          <div class="bbox bbox--ok" data-label="região normal" style="--x:64%;--y:36%;--w:22%;--h:32%;"></div>
+        </div>
+        <span class="rcase__pill">Saúde · 11 unidades · Sudeste</span>
+      </div>
+      <div class="rcase__body">
+        <h3>Rede hospitalar prioriza casos críticos de TC de crânio em segundos</h3>
+        <p class="rcase__problem">
+          <b>Problema.</b> Fila de laudos cronológica, sem priorização clínica — casos
+          de hemorragia aguda esperavam até 4h por uma leitura.
+        </p>
+        <p class="rcase__solution">
+          <b>O que entregamos.</b> Modelo de triagem de TC integrado ao PACS via DICOM e HL7 FHIR,
+          com heatmap explicável, auditoria por laudo e LGPD nativa. O caso suspeito sobe ao topo
+          da fila do radiologista de plantão automaticamente.
+        </p>
+        <div class="rcase__stats">
+          <div><b>−63%</b><span>tempo até laudo crítico</span></div>
+          <div><b>0,93</b><span>AUC clínico</span></div>
+          <div><b>11</b><span>unidades conectadas</span></div>
+          <div><b>2 sem.</b><span>integração ao PACS</span></div>
+        </div>
+        <blockquote class="rcase__quote">
+          “A IA não substitui o radiologista — ela garante que o caso urgente
+          chegue primeiro. Isso muda desfecho clínico.”
+          <cite>— Diretora médica, rede hospitalar Sudeste</cite>
+        </blockquote>
+      </div>
+    </article>
+
+    <!-- ===== CASE 3: VAREJO ===== -->
+    <article class="rcase">
+      <div class="rcase__media">
+        <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=1600&q=80"
+             alt="Gôndola de supermercado monitorada por câmera"/>
+        <div class="bbox-overlay">
+          <div class="bbox bbox--ok" data-label="SKU 4521 · 0.98" style="--x:8%;--y:22%;--w:24%;--h:56%;"></div>
+          <div class="bbox bbox--warn" data-label="ruptura · 0.91" style="--x:38%;--y:36%;--w:20%;--h:30%;"></div>
+          <div class="bbox bbox--ok" data-label="SKU 8830 · 0.96" style="--x:64%;--y:24%;--w:24%;--h:54%;"></div>
+        </div>
+        <span class="rcase__pill">Varejo alimentar · 480 lojas · Nacional</span>
+      </div>
+      <div class="rcase__body">
+        <h3>Rede de 480 lojas elimina ruptura sem instalar uma única câmera nova</h3>
+        <p class="rcase__problem">
+          <b>Problema.</b> Ruptura média de 14% em categorias-chave. Auditoria de planograma
+          dependia de visita do supervisor — chegava a cada 30 dias.
+        </p>
+        <p class="rcase__solution">
+          <b>O que entregamos.</b> Reaproveitamos as câmeras de CFTV existentes. Modelos detectam
+          SKU, share-of-shelf e ruptura em 9 categorias. O repositor recebe a ordem no celular em
+          menos de 5 minutos pelo app interno.
+        </p>
+        <div class="rcase__stats">
+          <div><b>−58%</b><span>ruptura nas categorias-piloto</span></div>
+          <div><b>+11%</b><span>vendas no piloto</span></div>
+          <div><b>R$ 2,3M</b><span>retorno anual</span></div>
+          <div><b>4 min</b><span>SLA até reposição</span></div>
+        </div>
+        <blockquote class="rcase__quote">
+          “Investimos zero em hardware novo. O ROI veio só por extrair informação
+          das câmeras que já tínhamos.”
+          <cite>— Head de Operações, rede de varejo nacional</cite>
+        </blockquote>
+      </div>
+    </article>
+
+    <!-- ===== CASE 4: SEGURANÇA DO TRABALHO (com VÍDEO destaque) ===== -->
+    <article class="rcase rcase--reverse">
+      <div class="rcase__media rcase__media--video">
+        <video autoplay muted loop playsinline
+               poster="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80">
+          <source src="https://cdn.coverr.co/videos/coverr-warehouse-worker-pushing-cart-2633/1080p.mp4" type="video/mp4" />
+        </video>
+        <div class="bbox-overlay">
+          <div class="bbox" data-label="operador · 0.96" style="--x:30%;--y:14%;--w:30%;--h:72%;"></div>
+          <div class="bbox bbox--ok" data-label="capacete ✓" style="--x:34%;--y:16%;--w:18%;--h:14%;"></div>
+          <div class="bbox bbox--ok" data-label="colete ✓" style="--x:32%;--y:38%;--w:24%;--h:22%;"></div>
+        </div>
+        <span class="rcase__pill">Logística · 14 CDs · Brasil</span>
+        <span class="rcase__live"><span class="dot"></span> LIVE FEED</span>
+      </div>
+      <div class="rcase__body">
+        <h3>Operador logístico zera incidentes de não-uso de EPI em 14 centros</h3>
+        <p class="rcase__problem">
+          <b>Problema.</b> Auditorias mensais flagravam ~22% de não-conformidade de EPI —
+          o gestor descobria o problema depois do acidente.
+        </p>
+        <p class="rcase__solution">
+          <b>O que entregamos.</b> Câmeras de borda Jetson nos pontos de acesso, com detecção
+          de capacete, colete e botina em tempo real. Alerta vai para o supervisor por Teams e
+          também aciona catraca quando faltar item obrigatório.
+        </p>
+        <div class="rcase__stats">
+          <div><b>0</b><span>acidentes ligados a EPI em 7 meses</span></div>
+          <div><b>14</b><span>CDs cobertos</span></div>
+          <div><b>edge</b><span>roda no Jetson local</span></div>
+          <div><b>4 sem.</b><span>do PoC ao primeiro CD</span></div>
+        </div>
+        <blockquote class="rcase__quote">
+          “A IA virou parte do processo de entrada do CD. Não é mais um relatório
+          mensal — é tempo real.”
+          <cite>— Head de SSMA, operador logístico nacional</cite>
+        </blockquote>
+      </div>
+    </article>
+
+    <!-- ===== CASE 5: AGRO (com VÍDEO destaque) ===== -->
+    <article class="rcase">
+      <div class="rcase__media rcase__media--video">
+        <video autoplay muted loop playsinline
+               poster="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80">
+          <source src="https://cdn.coverr.co/videos/coverr-the-farm-from-above-2633/1080p.mp4" type="video/mp4" />
+        </video>
+        <div class="bbox-overlay">
+          <div class="bbox bbox--ok" data-label="talhão A · sadio" style="--x:8%;--y:16%;--w:36%;--h:54%;"></div>
+          <div class="bbox bbox--warn" data-label="falha de plantio" style="--x:52%;--y:42%;--w:22%;--h:24%;"></div>
+        </div>
+        <span class="rcase__pill">Agronegócio · 120k ha · 3 safras</span>
+      </div>
+      <div class="rcase__body">
+        <h3>Cooperativa de soja reduz defensivos em 27% sem perder produtividade</h3>
+        <p class="rcase__problem">
+          <b>Problema.</b> Pulverização uniforme em 120k ha — caro, lento e nem sempre necessário.
+        </p>
+        <p class="rcase__solution">
+          <b>O que entregamos.</b> Pipeline próprio combina ortomosaicos de drone, satélite SAR e
+          câmeras embarcadas no pulverizador. Detecta falhas, pragas e estádio fenológico, gerando
+          mapa de aplicação variável compatível com John Deere e Stara.
+        </p>
+        <div class="rcase__stats">
+          <div><b>−27%</b><span>defensivos aplicados</span></div>
+          <div><b>120k ha</b><span>monitorados</span></div>
+          <div><b>+4%</b><span>produtividade média</span></div>
+          <div><b>3 safras</b><span>de operação contínua</span></div>
+        </div>
+        <blockquote class="rcase__quote">
+          “Pagou o investimento na primeira safra. Hoje, pulverizar uniforme
+          parece ficção científica.”
+          <cite>— Diretor agronômico, cooperativa Centro-Oeste</cite>
+        </blockquote>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============== APLICAÇÕES POR SETOR (quick grid) ============== -->
+<section class="section section--alt" id="aplicacoes">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Aplicações por setor</span>
+      <h2>Plug-and-play para os casos mais comuns. Custom para o que sua operação tem de único.</h2>
+    </div>
+
+    <div class="app-grid">
+
+      <article class="app">
+        <div class="app__img">
+          <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1200&q=80" alt="Linha de produção industrial"/>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--ok bbox--sm" data-label="peça · 0.96" style="--x:14%;--y:26%;--w:38%;--h:46%;"></div>
+            <div class="bbox bbox--warn bbox--sm" data-label="defeito · 0.83" style="--x:58%;--y:44%;--w:22%;--h:24%;"></div>
+          </div>
+          <span class="tag">Indústria</span>
+        </div>
+        <h3>QC automatizado</h3>
+        <p>Trincas, riscos, falhas de soldagem e desvios dimensionais em peças metálicas, vidros e PCBs.</p>
+        <ul class="kpi">
+          <li><b>↓ 72%</b> retrabalho</li>
+          <li><b>↑ 3,4×</b> throughput</li>
+        </ul>
+      </article>
+
+      <article class="app">
+        <div class="app__img">
+          <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1200&q=80" alt="Imagem médica de raio-X"/>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--ok bbox--sm" data-label="pulmão D · 0.97" style="--x:18%;--y:18%;--w:28%;--h:54%;"></div>
+            <div class="bbox bbox--warn bbox--sm" data-label="achado · 0.84" style="--x:54%;--y:32%;--w:18%;--h:20%;"></div>
+          </div>
+          <span class="tag">Saúde</span>
+        </div>
+        <h3>Triagem em PACS</h3>
+        <p>Apoio à decisão em RX, mamografia, TC e dermatoscopia, integrado via DICOM e HL7 FHIR.</p>
+        <ul class="kpi">
+          <li><b>0,93</b> AUC clínico</li>
+          <li><b>−40%</b> tempo de laudo</li>
+        </ul>
+      </article>
+
+      <article class="app">
+        <div class="app__img">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80" alt="Loja de varejo"/>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--ok bbox--sm" data-label="SKU · 12/14" style="--x:6%;--y:18%;--w:36%;--h:60%;"></div>
+            <div class="bbox bbox--warn bbox--sm" data-label="ruptura · 0.78" style="--x:48%;--y:52%;--w:18%;--h:24%;"></div>
+          </div>
+          <span class="tag">Varejo</span>
+        </div>
+        <h3>Gôndola &amp; planograma</h3>
+        <p>Reconhecimento de SKU, ruptura, planograma e share of shelf a partir do CFTV existente.</p>
+        <ul class="kpi">
+          <li><b>↓ 58%</b> ruptura</li>
+          <li><b>+11%</b> vendas piloto</li>
+        </ul>
+      </article>
+
+      <article class="app">
+        <div class="app__img">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Plantação vista aérea"/>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--ok bbox--sm" data-label="talhão · 0.92" style="--x:8%;--y:14%;--w:46%;--h:62%;"></div>
+            <div class="bbox bbox--warn bbox--sm" data-label="falha · 0.81" style="--x:60%;--y:46%;--w:24%;--h:26%;"></div>
+          </div>
+          <span class="tag">Agronegócio</span>
+        </div>
+        <h3>Monitoramento de lavouras</h3>
+        <p>Pragas, NDVI customizado, contagem de plantas via drone, satélite e câmera embarcada.</p>
+        <ul class="kpi">
+          <li><b>120k&nbsp;ha</b> monitorados</li>
+          <li><b>−27%</b> defensivos</li>
+        </ul>
+      </article>
+
+      <article class="app">
+        <div class="app__img">
+          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80" alt="Pilha de documentos"/>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--sm" data-label="campo · 0.99" style="--x:14%;--y:22%;--w:44%;--h:18%;"></div>
+            <div class="bbox bbox--ok bbox--sm" data-label="tabela · 0.97" style="--x:14%;--y:46%;--w:66%;--h:34%;"></div>
+          </div>
+          <span class="tag">Documentos</span>
+        </div>
+        <h3>OCR &amp; automação documental</h3>
+        <p>Notas fiscais, contratos, RG/CNH e manuscritos com extração estruturada e validação humana.</p>
+        <ul class="kpi">
+          <li><b>98,7%</b> acurácia</li>
+          <li><b>−85%</b> esforço manual</li>
+        </ul>
+      </article>
+
+      <article class="app">
+        <div class="app__img">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80" alt="Câmera de tráfego e ônibus"/>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--sm" data-label="carro · 0.95" style="--x:14%;--y:40%;--w:24%;--h:32%;"></div>
+            <div class="bbox bbox--ok bbox--sm" data-label="ônibus · 0.92" style="--x:46%;--y:38%;--w:28%;--h:36%;"></div>
+            <div class="bbox bbox--warn bbox--sm" data-label="ABC-1D23" style="--x:22%;--y:68%;--w:16%;--h:10%;"></div>
+          </div>
+          <span class="tag">Mobilidade</span>
+        </div>
+        <h3>LPR &amp; analytics de tráfego</h3>
+        <p>Leitura de placas, classificação veicular e contagem por faixa em câmeras urbanas e rodoviárias.</p>
+        <ul class="kpi">
+          <li><b>99,1%</b> leitura LPR</li>
+          <li><b>200 fps</b> em borda</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== VIDEO ANALYTICS LIVE ============== -->
+<section class="section" id="video">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">Em vídeo, em tempo real</span>
+      <h2>Veja o que sua câmera vê — com as detecções acontecendo no frame.</h2>
+      <p>Stream RTSP, WebRTC ou arquivo. Eventos saem por webhook, MQTT, Kafka ou diretamente no dashboard.</p>
+    </div>
+
+    <div class="video-grid">
+
+      <article class="vcard">
+        <div class="vframe">
+          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80">
+            <source src="https://cdn.coverr.co/videos/coverr-people-walking-in-the-city-2633/1080p.mp4" type="video/mp4" />
+          </video>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--sm" data-label="pessoa · 0.94" style="--x:18%;--y:26%;--w:14%;--h:52%;"></div>
+            <div class="bbox bbox--sm" data-label="pessoa · 0.91" style="--x:42%;--y:22%;--w:14%;--h:58%;"></div>
+            <div class="bbox bbox--sm bbox--track" data-label="ID #87" style="--x:66%;--y:30%;--w:14%;--h:48%;"></div>
+          </div>
+          <div class="vframe__chip">contagem · 142</div>
+        </div>
+        <h3>Fluxo de pessoas</h3>
+        <p>Linha virtual, ROI e mapas de calor para varejo, shoppings e transporte público.</p>
+      </article>
+
+      <article class="vcard">
+        <div class="vframe">
+          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80">
+            <source src="https://cdn.coverr.co/videos/coverr-highway-traffic-at-night-5236/1080p.mp4" type="video/mp4" />
+          </video>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--sm" data-label="carro · 0.95" style="--x:14%;--y:40%;--w:26%;--h:32%;"></div>
+            <div class="bbox bbox--ok bbox--sm" data-label="caminhão · 0.91" style="--x:50%;--y:44%;--w:30%;--h:30%;"></div>
+            <div class="bbox bbox--warn bbox--sm" data-label="placa ABC-1D23" style="--x:22%;--y:68%;--w:18%;--h:10%;"></div>
+          </div>
+          <div class="vframe__chip">veículos · 38 / min</div>
+        </div>
+        <h3>Trânsito &amp; LPR</h3>
+        <p>Classificação por tipo, OCR de placas e eventos de infração em câmeras de via.</p>
+      </article>
+
+      <article class="vcard">
+        <div class="vframe">
+          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80">
+            <source src="https://cdn.coverr.co/videos/coverr-warehouse-worker-pushing-cart-2633/1080p.mp4" type="video/mp4" />
+          </video>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--sm" data-label="operador · 0.96" style="--x:28%;--y:14%;--w:30%;--h:72%;"></div>
+            <div class="bbox bbox--ok bbox--sm" data-label="capacete ✓" style="--x:32%;--y:16%;--w:18%;--h:14%;"></div>
+            <div class="bbox bbox--ok bbox--sm" data-label="colete ✓" style="--x:30%;--y:38%;--w:24%;--h:24%;"></div>
+          </div>
+          <div class="vframe__chip">EPI · 4 / 4</div>
+        </div>
+        <h3>Segurança do trabalho</h3>
+        <p>EPI, áreas de exclusão, queda de pessoa e comportamento anômalo em planta industrial.</p>
+      </article>
+
+      <article class="vcard">
+        <div class="vframe">
+          <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80">
+            <source src="https://cdn.coverr.co/videos/coverr-soccer-players-running-on-the-field-0427/1080p.mp4" type="video/mp4" />
+          </video>
+          <div class="bbox-overlay">
+            <div class="bbox bbox--sm" data-label="#10 · home" style="--x:20%;--y:24%;--w:12%;--h:48%;"></div>
+            <div class="bbox bbox--warn bbox--sm" data-label="#7 · away" style="--x:44%;--y:28%;--w:12%;--h:44%;"></div>
+            <div class="bbox bbox--ok bbox--sm bbox--track" data-label="bola · ID 1" style="--x:62%;--y:62%;--w:6%;--h:10%;"></div>
+          </div>
+          <div class="vframe__chip">jogador · #10</div>
+        </div>
+        <h3>Sports &amp; performance</h3>
+        <p>Tracking multi-câmera, mapas de posse, heatmaps individuais e pose para análise tática.</p>
+      </article>
+
+    </div>
+
+    <div class="callout">
+      <div>
+        <span class="eyebrow">Edge ready</span>
+        <h3>Roda onde sua câmera está.</h3>
+        <p>NVIDIA, Jetson, Hailo, OAK-D ou CPU pura — com OTA, telemetria e fallback offline.</p>
+      </div>
+      <a href="#contato" class="btn btn--primary">Quero testar com minha câmera</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============== TESTIMONIALS ============== -->
+<section class="section section--alt" id="depoimentos">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <span class="eyebrow">O que nossos clientes dizem</span>
+      <h2>Resultado é número. Mas o melhor termômetro vem direto de quem opera.</h2>
+    </div>
+    <div class="quotes-grid">
+      <figure class="quote">
+        <blockquote>
+          “A Mangaba entregou um piloto funcionando em 4 semanas — eu esperava 6 meses.
+          O time entendeu nosso processo melhor que muitos consultores que já passaram aqui.”
+        </blockquote>
+        <figcaption>
+          <span class="avatar avatar--1" aria-hidden="true">MR</span>
+          <div>
+            <b>Marcelo Rocha</b>
+            <span>Diretor Industrial · Manufatura</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>
+          “Reaproveitamos câmeras antigas e a IA passou a apontar ruptura por loja, em tempo real.
+          O CFO chamou de ‘ROI mais fácil do ano’.”
+        </blockquote>
+        <figcaption>
+          <span class="avatar avatar--2" aria-hidden="true">JF</span>
+          <div>
+            <b>Juliana Ferraz</b>
+            <span>Head de Operações · Varejo</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="quote">
+        <blockquote>
+          “Conformidade LGPD, on-prem, integração ao PACS por DICOM. Foi a primeira IA
+          médica que passou no nosso processo de TI de primeira tentativa.”
+        </blockquote>
+        <figcaption>
+          <span class="avatar avatar--3" aria-hidden="true">PA</span>
+          <div>
+            <b>Dra. Patrícia Andrade</b>
+            <span>Diretora Médica · Rede Hospitalar</span>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRICING / PACOTES ============== -->
+<section class="section" id="pacotes">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <span class="eyebrow">Pacotes</span>
+      <h2>Comece pequeno. Escale quando o ROI provar o caminho.</h2>
+      <p>Modelo SaaS por câmera + serviço de implantação. Todos os planos incluem treinamento de modelo, suporte e atualizações.</p>
+    </div>
+
+    <div class="price-grid">
+
+      <article class="price">
+        <header>
+          <h3>Starter</h3>
+          <p>Piloto controlado em 1 site.</p>
+        </header>
+        <div class="price__num">
+          <span class="price__from">a partir de</span>
+          <b>R$ 4.900</b>
+          <span class="price__per">/mês</span>
+        </div>
+        <ul class="price__feat">
+          <li>Até <b>4 câmeras</b> em 1 site</li>
+          <li>1 caso de uso plug-and-play</li>
+          <li>Dashboard white-label</li>
+          <li>Suporte por e-mail (D+1)</li>
+          <li>Setup em até 3 semanas</li>
+        </ul>
+        <a class="btn btn--ghost" href="#contato">Quero o piloto</a>
+      </article>
+
+      <article class="price price--featured">
+        <span class="price__badge">Mais escolhido</span>
+        <header>
+          <h3>Scale</h3>
+          <p>Operação multi-site com integrações.</p>
+        </header>
+        <div class="price__num">
+          <span class="price__from">a partir de</span>
+          <b>R$ 18.900</b>
+          <span class="price__per">/mês</span>
+        </div>
+        <ul class="price__feat">
+          <li>Até <b>30 câmeras</b> · multi-site</li>
+          <li>Até 3 casos de uso customizados</li>
+          <li>Integração ERP / MES / WMS</li>
+          <li>SLA 99,5% · suporte 12×5</li>
+          <li>Treinamento contínuo do modelo</li>
+        </ul>
+        <a class="btn btn--primary" href="#contato">Falar com vendas</a>
+      </article>
+
+      <article class="price">
+        <header>
+          <h3>Enterprise</h3>
+          <p>Deploy nacional, edge e on-prem.</p>
+        </header>
+        <div class="price__num">
+          <span class="price__from">sob consulta</span>
+          <b>Custom</b>
+          <span class="price__per">·</span>
+        </div>
+        <ul class="price__feat">
+          <li><b>Câmeras ilimitadas</b></li>
+          <li>Edge (Jetson/Hailo) + on-prem</li>
+          <li>SLA 99,9% · suporte 24×7</li>
+          <li>LGPD/SOC2 · auditoria dedicada</li>
+          <li>Customer Success nomeado</li>
+        </ul>
+        <a class="btn btn--ghost" href="#contato">Conversar com a diretoria</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section class="section section--alt" id="faq">
+  <div class="container faq">
+    <div class="section__head">
+      <span class="eyebrow">Perguntas que recebemos toda semana</span>
+      <h2>FAQ comercial.</h2>
+    </div>
+
+    <div class="faq__list">
+      <details>
+        <summary>Em quanto tempo conseguimos um piloto rodando?</summary>
+        <p>Entre 3 e 6 semanas, dependendo da complexidade do caso e da disponibilidade dos dados.
+           Para casos plug-and-play (EPI, contagem, LPR), entregamos em 2 semanas.</p>
+      </details>
+      <details>
+        <summary>Funciona com as câmeras que já temos?</summary>
+        <p>Sim. Em mais de 80% dos projetos, reaproveitamos a infraestrutura existente
+           (RTSP, ONVIF, CFTV). Quando há gargalo de qualidade, recomendamos o upgrade pontual.</p>
+      </details>
+      <details>
+        <summary>Como ficam LGPD e dados sensíveis?</summary>
+        <p>Privacidade desde o desenho: opções on-prem e edge para nunca sair vídeo da sua rede,
+           anonimização automática de rostos/placas e DPA padrão da indústria.
+           Setor saúde: HL7 FHIR + DICOM + ISO 27001.</p>
+      </details>
+      <details>
+        <summary>Qual é o modelo de cobrança?</summary>
+        <p>SaaS por câmera ativa, com tier por volume. Implantação é one-off e pode ser
+           parcelada. Não cobramos por inferência nem por evento — previsibilidade total.</p>
+      </details>
+      <details>
+        <summary>Vocês entregam o modelo treinado ou só a plataforma?</summary>
+        <p>Os dois. Você pode usar nossos modelos prontos (catálogo de 120+),
+           treinar com seus dados em ambiente isolado ou trazer modelo próprio
+           e usar nossa stack de inferência.</p>
+      </details>
+      <details>
+        <summary>Conseguem rodar offline / em ambiente sem internet?</summary>
+        <p>Sim. Toda a stack tem versão edge (Docker/Helm) com sincronização eventual,
+           para sites remotos como mina, fazenda ou plataforma offshore.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CTA FINAL / CONTATO ============== -->
+<section class="cta" id="contato">
+  <div class="container cta__inner">
+    <span class="eyebrow">Próximo passo</span>
+    <h2>Em 20 minutos, mostramos o que dá para fazer com as suas câmeras.</h2>
+    <p>Agende uma demonstração com nosso time. Trazemos um caso real do seu setor já configurado.</p>
+    <div class="cta__actions">
+      <a class="btn btn--primary btn--lg" href="https://wa.me/5500000000000?text=Quero%20agendar%20uma%20demo%20do%20Mangaba%20CV"
+         target="_blank" rel="noopener">📱 WhatsApp comercial</a>
+      <a class="btn btn--ghost btn--lg" href="mailto:vendas@mangaba.ai?subject=Demo%20Mangaba%20CV">✉️ vendas@mangaba.ai</a>
+    </div>
+    <p class="cta__small">Resposta em até <b>4 horas úteis</b> · sem compromisso.</p>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="brand__name">Mangaba<span class="brand__dot">.</span>AI</span>
+      <p>Visão computacional aplicada — para imagens, vídeos e o que vier depois.</p>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <h4>Plataforma</h4>
+        <a href="#cases">Cases</a>
+        <a href="#aplicacoes">Aplicações</a>
+        <a href="#video">Vídeo</a>
+        <a href="#pacotes">Pacotes</a>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <a href="#contato">Contato</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/dheiver2" target="_blank" rel="noopener">GitHub</a>
+        <a href="#">LGPD</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Mangaba AI · Feito com cuidado em 🇧🇷</span>
+    <span>Hospedado em GitHub Pages</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
