@@ -1086,3 +1086,255 @@ em {
    ========================================================= */
 html { scroll-behavior: smooth; }
 ::selection { background: var(--accent-soft); color: var(--accent-dk); }
+
+/* =========================================================
+   DARK WRAPPER MODE — landing aligned with the brand identity:
+   dark canvas, rounded cream cards, dotted texture inside each card,
+   hero broken into 3 cards (matches the brand kit reference exactly).
+   ========================================================= */
+
+body {
+  background: #0E1217;
+}
+body::before { display: none; }
+
+/* Floating pill nav, like the brand kit top bar */
+.nav {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: none;
+  padding: 18px 28px 0;
+  position: sticky;
+  top: 0; z-index: 50;
+}
+.nav__inner {
+  max-width: 1480px;
+  background: rgba(20,24,30,.62);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 999px;
+  padding: 12px 22px 12px 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+.nav .brand { color: #FAF6EA; }
+.nav .brand__dot { color: var(--orange); }
+.nav__links a:not(.nav__cta) { color: #DAD2C2; }
+.nav__links a:not(.nav__cta):hover { color: var(--orange); }
+
+/* Every section becomes a band on dark with a cream card inside */
+.section,
+.trust,
+.cta,
+.hero {
+  background: transparent !important;
+  border: none !important;
+  padding: 12px 28px;
+}
+.section + .section,
+.trust + .section,
+.section + .cta { padding-top: 0; }
+
+.section .container,
+.trust .container,
+.cta__inner {
+  max-width: 1480px;
+  background: var(--bg);
+  border-radius: 28px;
+  padding: 64px 56px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.20);
+  position: relative;
+  overflow: hidden;
+}
+.trust .container { padding: 28px 44px; }
+
+/* Dotted texture INSIDE each cream card */
+.section .container::before,
+.trust .container::before,
+.cta__inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(27,27,31,.06) 1px, transparent 1.4px);
+  background-size: 22px 22px;
+  opacity: .55;
+  z-index: 0;
+}
+.section .container > *,
+.trust .container > *,
+.cta__inner > * { position: relative; z-index: 1; }
+
+/* Mild section--alt variation: warmer cream */
+.section--alt .container {
+  background:
+    radial-gradient(600px 280px at 100% 0%, var(--yellow-soft) 0%, transparent 60%),
+    var(--bg-alt);
+}
+
+/* ===== HERO — 3 cards row matching the reference ===== */
+.hero { padding: 24px 28px; }
+.hero__inner {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1.05fr 1.5fr 1fr;
+  gap: 18px;
+  text-align: left;
+}
+.hero-card {
+  background: var(--bg);
+  border-radius: 28px;
+  padding: 40px 36px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.18);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hero-card--text {
+  background:
+    radial-gradient(420px 240px at 0% 100%, var(--bg-peach) 0%, transparent 65%),
+    var(--bg);
+}
+.hero-card--media {
+  background:
+    radial-gradient(640px 320px at 50% 0%, var(--bg-peach) 0%, transparent 65%),
+    var(--bg);
+  padding: 24px;
+  gap: 12px;
+}
+.hero-card--side {
+  background:
+    radial-gradient(420px 240px at 100% 0%, var(--yellow-soft) 0%, transparent 60%),
+    var(--bg);
+}
+/* Dotted texture inside each hero card */
+.hero-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(27,27,31,.06) 1px, transparent 1.4px);
+  background-size: 22px 22px;
+  opacity: .5;
+  z-index: 0;
+}
+.hero-card > * { position: relative; z-index: 1; }
+
+.hero-card .hero__title {
+  margin-top: 0;
+  max-width: none;
+  font-size: clamp(1.7rem, 2.4vw, 2.3rem);
+  line-height: 1.1;
+}
+.hero-card .hero__lede {
+  margin-top: 4px;
+  font-size: 0.98rem;
+  max-width: none;
+}
+.hero-card .hero__cta { margin-top: 14px; }
+.hero-card .hero__proof { margin-top: 14px; font-size: 0.86rem; }
+
+/* Media card — image goes edge-to-edge inside the inner padding */
+.hero-card--media .hero__media {
+  margin-top: 0;
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  border: none;
+  box-shadow: none;
+  flex: 1;
+}
+
+/* Side card — KPI list + capability chips */
+.hero__kpi {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.hero__kpi li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.hero__kpi li:first-child { padding-top: 0; }
+.hero__kpi li:last-child  { border-bottom: none; padding-bottom: 0; }
+.hero__kpi b {
+  display: block;
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.hero__kpi span {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.hero__chips .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(240,140,46,.28);
+  white-space: nowrap;
+}
+.hero__chips .chip--ok  { background: var(--green); box-shadow: 0 4px 12px rgba(109,163,77,.28); }
+.hero__chips .chip--ink { background: var(--ink);   box-shadow: 0 4px 12px rgba(27,27,31,.28); }
+
+@media (max-width: 1100px) {
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero-card { padding: 32px 28px; }
+}
+
+/* Footer on dark — minimal */
+.footer {
+  background: transparent;
+  padding: 32px 28px 18px;
+  color: #B6AFA0;
+}
+.footer__inner { max-width: 1480px; }
+.footer__brand .brand__name { color: #FAF6EA; }
+.footer__cols h4 { color: #7E7A70; }
+.footer__cols a { color: #C7C1B3; }
+.footer__bottom {
+  max-width: 1480px;
+  padding-left: 0; padding-right: 0;
+  border-color: rgba(255,255,255,.06);
+}
+
+/* Section--alt no longer needs its own border (we're on dark) */
+.section--alt { border-top: none; border-bottom: none; }
+
+/* The bands now provide the chrome — clear out old hero internal border-bottom */
+.hero { border-bottom: none; }
+
+/* Inside cards: cap container side padding so internal layouts breathe correctly */
+@media (max-width: 760px) {
+  .section .container,
+  .trust .container,
+  .cta__inner { padding: 36px 22px; border-radius: 22px; }
+  .hero { padding: 14px 14px; }
+  .nav { padding: 14px 14px 0; }
+  .nav__inner { padding: 10px 14px; }
+}
