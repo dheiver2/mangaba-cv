@@ -5,33 +5,33 @@
    ========================================================= */
 
 :root {
-  /* Surfaces — official cream gradient (#FFFCF0 → #FFDFCC) */
-  --bg:           #FFFCF0;     /* cream (logo backdrop) */
+  /* Surfaces — official cream gradient (#FFF8F5 → #FFDAC2) */
+  --bg:           #FFF8F5;     /* cream (logo backdrop) */
   --bg-alt:       #FFF4DF;     /* deeper cream */
-  --bg-peach:     #FFDFCC;     /* peach for hero radials */
+  --bg-peach:     #FFDAC2;     /* peach for hero radials */
   --surface:      #FFFEF8;     /* near-white card */
   --surface-soft: #FFF8E8;     /* off-white variant */
   --border:       #F2E3C8;
   --border-strong:#E5CFA8;
 
   /* Ink — official dark brown */
-  --ink:          #403731;
+  --ink:          #1E0D01;
   --ink-soft:     #54493F;
   --muted:        #84766B;
 
   /* Mango palette — official brand colors */
-  --orange:       #E94A12;     /* primary */
-  --orange-dk:    #C53D0D;     /* hover / pressed */
-  --orange-soft:  #FFDFCC;     /* chip backgrounds */
+  --orange:       #F97518;     /* primary */
+  --orange-dk:    #C25B11;     /* hover / pressed */
+  --orange-soft:  #FFDAC2;     /* chip backgrounds */
   --orange-deep:  #A93508;     /* darkest edge of fruit */
-  --orange-lt:    #FF7A1A;     /* light orange accent */
+  --orange-lt:    #FF9C24;     /* light orange accent */
   --yellow:       #FFD83D;     /* official yellow */
   --yellow-soft:  #FFF3C2;
   --highlight:    #FFE98F;     /* light cream-yellow highlight */
   --green:        #7BBF26;     /* official green */
   --green-dk:     #689924;     /* official deep green */
   --green-soft:   #E6F2CE;
-  --blush:        #FF7A1A;     /* warm light-orange blush */
+  --blush:        #FF9C24;     /* warm light-orange blush */
 
   /* Backward-compat aliases (preserve existing rules) */
   --accent:       var(--orange);
@@ -49,7 +49,7 @@
   --radius-lg: 26px;
   --shadow-sm: 0 1px 2px rgba(64,55,49,.04), 0 2px 10px rgba(64,55,49,.05);
   --shadow:    0 6px 18px rgba(64,55,49,.07), 0 18px 40px rgba(64,55,49,.09);
-  --shadow-orange: 0 8px 24px rgba(233,74,18,.28);
+  --shadow-orange: 0 8px 24px rgba(249,117,24,.28);
 }
 
 * { box-sizing: border-box; }
@@ -294,8 +294,8 @@ em {
   width: var(--w); height: var(--h);
   border: 1.6px solid var(--accent);
   border-radius: 4px;
-  background: linear-gradient(180deg, rgba(233,74,18,.14), rgba(233,74,18,0) 55%);
-  box-shadow: 0 0 0 1px rgba(233,74,18,.22), 0 2px 12px rgba(0,0,0,.18);
+  background: linear-gradient(180deg, rgba(249,117,24,.14), rgba(249,117,24,0) 55%);
+  box-shadow: 0 0 0 1px rgba(249,117,24,.22), 0 2px 12px rgba(0,0,0,.18);
   pointer-events: none;
 }
 .bbox::before {
@@ -736,14 +736,14 @@ em {
 .hero__hud .dot,
 .rcase__live .dot {
   width: 8px; height: 8px;
-  background: #E94A12;
+  background: #F97518;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(233,74,18,.22);
+  box-shadow: 0 0 0 4px rgba(249,117,24,.22);
   animation: pulse 1.4s ease-in-out infinite;
 }
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(233,74,18,.22); }
-  50%      { box-shadow: 0 0 0 8px rgba(233,74,18,.06); }
+  0%, 100% { box-shadow: 0 0 0 4px rgba(249,117,24,.22); }
+  50%      { box-shadow: 0 0 0 8px rgba(249,117,24,.06); }
 }
 
 /* Trust strip */
@@ -956,7 +956,7 @@ em {
   font-family: var(--serif); font-weight: 600; font-size: 0.95rem;
   color: #fff; flex-shrink: 0;
 }
-.avatar--1 { background: linear-gradient(135deg, #FF7A1A, #E94A12); }
+.avatar--1 { background: linear-gradient(135deg, #FF9C24, #F97518); }
 .avatar--2 { background: linear-gradient(135deg, #689924, #4C7019); }
 .avatar--3 { background: linear-gradient(135deg, #FFD83D, #E9A012); }
 
@@ -981,7 +981,7 @@ em {
 .price:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .price--featured {
   border-color: var(--orange);
-  box-shadow: 0 0 0 1px var(--orange), 0 12px 36px rgba(233,74,18,.22);
+  box-shadow: 0 0 0 1px var(--orange), 0 12px 36px rgba(249,117,24,.22);
   background: linear-gradient(180deg, var(--orange-soft), var(--surface) 45%);
 }
 .price__badge {
@@ -1082,7 +1082,7 @@ em {
 }
 
 /* CTA — pequenas adições */
-.cta .eyebrow { background: rgba(233,74,18,.14); }
+.cta .eyebrow { background: rgba(249,117,24,.14); }
 .cta__small { color: var(--muted); margin-top: 14px; font-size: 0.9rem; }
 .cta__small b { color: var(--ink); font-weight: 600; }
 
